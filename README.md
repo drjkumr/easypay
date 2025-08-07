@@ -10,7 +10,7 @@
 
 Easypay is a robust and scalable Payroll Management System designed for XYZ Company to streamline payroll operations, ensure compliance, and enhance employee satisfaction. It automates salary calculations, manages leave and benefits, and provides secure access to payroll data for all stakeholders.
 
-This project is built with a strong focus on **auditability**, **modularity**, and **real-world business logic**, aiming to deliver enterprise-grade impact and impress SMEs and higher management.
+This project is built with a strong focus on **auditability**, **modularity**, and **real-world business logic**, aiming to deliver enterprise-grade impact.
 
 ---
 
