@@ -110,8 +110,8 @@ This project is built with a strong focus on **auditability**, **modularity**, a
 ## Novel Features to be Implemented 🆕
 - GenAI Integration
 - Local Infrastructure-as-a-Service (L-IaaS)
-- L-IaaS Devops CI/CD environment
-- Emulated Private Cloud Server and an Edge server for Full-Stack development using a privately owned server
+- L-IaaS DevOPS CI/CD environment
+- Emulated Private Cloud Server and Edge server for Full-Stack development using a privately owned server.
 ---
 
 ## 📌 Notes
