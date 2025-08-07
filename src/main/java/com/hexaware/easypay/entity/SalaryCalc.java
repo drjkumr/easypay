@@ -5,10 +5,12 @@ import java.math.BigDecimal;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.ToString;
 
 @Entity
 @ToString
+@Table(name="salary_calc")
 public class SalaryCalc {
 
     @Id
