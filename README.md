@@ -112,6 +112,7 @@ This project is built with a strong focus on **auditability**, **modularity**, a
 - Local Infrastructure-as-a-Service (L-IaaS)
 - L-IaaS DevOPS CI/CD environment
 - Emulated Private Cloud Server and Edge server for Full-Stack development using a privately owned server.
+- Employee analytics dashboard for Admin.
 ---
 
 ## 📌 Notes
