@@ -107,6 +107,12 @@ This project is built with a strong focus on **auditability**, **modularity**, a
 - ✅ Audit trail and changelog schema with Log4j integration  
 
 ---
+## Novel Features to be Implemented 🆕
+- GenAI Integration
+- Local Infrastructure-as-a-Service (L-IaaS)
+- L-IaaS Devops CI/CD environment
+- Emulated Private Cloud Server and an Edge server for Full-Stack development using a privately owned server
+---
 
 ## 📌 Notes
 
