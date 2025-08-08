@@ -21,6 +21,13 @@ public class Employee {
     @Column(name = "designation")
     private String designation;
 
+    public Employee(int empId, String name, String dept, String designation) {
+        this.empId = empId;
+        this.name = name;
+        this.dept = dept;
+        this.designation = designation;
+    }
+
     public int getEmpId() {
         return empId;
     }

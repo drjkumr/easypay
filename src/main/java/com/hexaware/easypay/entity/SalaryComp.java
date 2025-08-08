@@ -33,6 +33,21 @@ public class SalaryComp {
     @Column(name = "income_tax")
     private BigDecimal incomeTax;
 
+    
+
+    public SalaryComp(int empId, BigDecimal ctc, BigDecimal base, BigDecimal hra, BigDecimal ta, BigDecimal oa,
+            BigDecimal pf, BigDecimal profTax, BigDecimal incomeTax) {
+        this.empId = empId;
+        this.ctc = ctc;
+        this.base = base;
+        this.hra = hra;
+        this.ta = ta;
+        this.oa = oa;
+        this.pf = pf;
+        this.profTax = profTax;
+        this.incomeTax = incomeTax;
+    }
+
     public int getEmpId() {
         return empId;
     }

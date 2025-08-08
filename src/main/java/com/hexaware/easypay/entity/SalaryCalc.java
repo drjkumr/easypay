@@ -23,6 +23,15 @@ public class SalaryCalc {
     @Column(name = "actual_monthly_payout")
     private BigDecimal actualMonthlyPayout;
 
+    
+
+    public SalaryCalc(int empId, BigDecimal annualIncome, BigDecimal dailyPayout, BigDecimal actualMonthlyPayout) {
+        this.empId = empId;
+        this.annualIncome = annualIncome;
+        this.dailyPayout = dailyPayout;
+        this.actualMonthlyPayout = actualMonthlyPayout;
+    }
+
     public int getEmpId() {
         return empId;
     }

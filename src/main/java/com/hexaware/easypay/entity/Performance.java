@@ -23,6 +23,15 @@ public class Performance {
     @Column(name = "bonus")
     private BigDecimal bonus;
 
+    
+
+    public Performance(int empId, BigDecimal performance, BigDecimal bonusPercent, BigDecimal bonus) {
+        this.empId = empId;
+        this.performance = performance;
+        this.bonusPercent = bonusPercent;
+        this.bonus = bonus;
+    }
+
     public int getEmpId() {
         return empId;
     }

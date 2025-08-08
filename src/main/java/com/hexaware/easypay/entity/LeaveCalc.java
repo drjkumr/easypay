@@ -19,6 +19,12 @@ public class LeaveCalc {
     @Column(name = "unpaid_leaves")
     private int unpaidLeaves;
 
+    public LeaveCalc(int empId, int paidLeaves, int unpaidLeaves) {
+        this.empId = empId;
+        this.paidLeaves = paidLeaves;
+        this.unpaidLeaves = unpaidLeaves;
+    }
+
     public int getEmpId() {
         return empId;
     }

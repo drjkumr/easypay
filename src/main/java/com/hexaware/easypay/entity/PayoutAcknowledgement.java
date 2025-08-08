@@ -12,7 +12,7 @@ import lombok.ToString;
 
 @Entity
 @ToString
-@Table(name="payout_acknowledgement")
+@Table(name = "payout_acknowledgement")
 public class PayoutAcknowledgement {
 
     @Column(name = "emp_id")
@@ -46,6 +46,27 @@ public class PayoutAcknowledgement {
     private LocalDateTime generatedAt;
     @Column(name = "generated_by_username")
     private String generatedByUsername;
+
+    public PayoutAcknowledgement(int empId, String name, UUID ackId, BigDecimal ctc, BigDecimal base, BigDecimal hra,
+            BigDecimal ta, BigDecimal oa, BigDecimal pf, BigDecimal profTax, BigDecimal incomeTax,
+            BigDecimal annualIncome, BigDecimal actualMonthlyPayout, LocalDateTime generatedAt,
+            String generatedByUsername) {
+        this.empId = empId;
+        this.name = name;
+        this.ackId = ackId;
+        this.ctc = ctc;
+        this.base = base;
+        this.hra = hra;
+        this.ta = ta;
+        this.oa = oa;
+        this.pf = pf;
+        this.profTax = profTax;
+        this.incomeTax = incomeTax;
+        this.annualIncome = annualIncome;
+        this.actualMonthlyPayout = actualMonthlyPayout;
+        this.generatedAt = generatedAt;
+        this.generatedByUsername = generatedByUsername;
+    }
 
     public int getEmpId() {
         return empId;

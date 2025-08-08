@@ -19,6 +19,14 @@ public class User {
     @Column(name = "psw")
     private String psw;
 
+    
+
+    public User(int empId, String username, String psw) {
+        this.empId = empId;
+        this.username = username;
+        this.psw = psw;
+    }
+
     public int getEmpId() {
         return empId;
     }
