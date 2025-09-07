@@ -2,6 +2,7 @@ package com.hexaware.easypay.dto;
 
 import java.math.BigDecimal;
 
+<<<<<<< HEAD
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
@@ -85,5 +86,41 @@ public class EmployeeDTO {
     public void setCtc(BigDecimal ctc) {
         this.ctc = ctc;
     }
+=======
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class EmployeeDTO {
+
+    @NotNull
+    private Long empId;
+    @NotBlank
+    private String name;
+    @NotBlank
+    private String dept;
+    @NotBlank
+    private String email;
+    @NotBlank
+    private String password;
+    @NotBlank
+    private String role;
+    @NotNull
+    @DecimalMin(value = "0.0")
+    private BigDecimal ctc;
+    @NotNull
+    @DecimalMin(value = "0.0")
+    private BigDecimal disbursedSalary;
+    @NotBlank
+    @Min(value=0)
+    private Integer paidLeaves;
+    @Min(value = 0)
+    private Long policyId;
+>>>>>>> 314dc4c (Updated latest backend)
 
 }

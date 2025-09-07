@@ -1,6 +1,7 @@
 package com.hexaware.easypay.entity;
 
 import java.math.BigDecimal;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -188,5 +189,44 @@ public class Employee {
     
 
 
+=======
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@Table(name="employee")
+@NoArgsConstructor
+@AllArgsConstructor
+public class Employee {
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name="emp_id")
+    private Long empId;
+    @Column(name="name")
+    private String name;
+    @Column(name="dept")
+    private String dept;
+    @Column(name="email")
+    private String email;
+    @Column(name="password")
+    private String password;
+    @Column(name="role")
+    private String role;
+    @Column(name="ctc")
+    private BigDecimal ctc;
+    @Column(name="disbursed_salary")
+    private BigDecimal disbursedSalary;
+    @Column(name="paid_leaves")
+    private Integer paidLeaves;
+>>>>>>> 314dc4c (Updated latest backend)
 
 }

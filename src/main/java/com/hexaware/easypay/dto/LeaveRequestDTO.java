@@ -1,6 +1,7 @@
 package com.hexaware.easypay.dto;
 
 import java.time.LocalDate;
+<<<<<<< HEAD
 import java.util.UUID;
 
 import jakarta.validation.constraints.Future;
@@ -128,5 +129,21 @@ public class LeaveRequestDTO {
     public void setApprovalRejectionReason(String approvalRejectionReason) {
         ApprovalRejectionReason = approvalRejectionReason;
     }
+=======
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class LeaveRequestDTO {
+
+    private Long reqId;
+    private Long empId;
+    private LocalDate startDate;
+    private LocalDate endDate;
+    private String reason;
+    private Boolean approval;
+>>>>>>> 314dc4c (Updated latest backend)
 
 }

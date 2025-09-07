@@ -7,4 +7,8 @@ public class PasswordMismatchException extends RuntimeException{
     }
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 314dc4c (Updated latest backend)

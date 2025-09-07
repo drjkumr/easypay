@@ -6,6 +6,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+<<<<<<< HEAD
 
 @Entity
 @Table(name = "salary_policy")
@@ -107,5 +108,38 @@ public class SalaryPolicy {
     public void setProfTaxFixed(BigDecimal profTaxFixed) {
         this.profTaxFixed = profTaxFixed;
     }
+=======
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@Table(name="salary_policy")
+@NoArgsConstructor
+@AllArgsConstructor
+public class SalaryPolicy {
+
+    @Id
+    @Column(name="policy_id")
+    private Long policyId;
+    @Column(name="base_percent")
+    private BigDecimal basePercent;
+    @Column(name="hra_percent")
+    private BigDecimal hraPercent;
+    @Column(name="ta_percent")
+    private BigDecimal taPercent;
+    @Column(name="oa_percent")
+    private BigDecimal oaPercent;
+    @Column(name="pf_percent")
+    private BigDecimal pfPercent;
+    @Column(name="income_tax_percent")
+    private BigDecimal incomeTaxPercent;
+    @Column(name="prof_tax_fixed")
+    private BigDecimal profTaxFixed;
+    @Column(name="policy_desc")
+    private String policyDesc;
+
+>>>>>>> 314dc4c (Updated latest backend)
 
 }

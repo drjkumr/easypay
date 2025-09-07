@@ -2,6 +2,7 @@ package com.hexaware.easypay.dto;
 
 import java.math.BigDecimal;
 
+<<<<<<< HEAD
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
@@ -110,5 +111,42 @@ public class SalaryPolicyDTO {
     public void setProfTaxFixed(BigDecimal profTaxFixed) {
         this.profTaxFixed = profTaxFixed;
     }
+=======
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class SalaryPolicyDTO {
+
+    @NotBlank
+    private Long policyId;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal basePercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal hraPercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal oaPercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal taPercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal pfPercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal incomeTaxPercent;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private BigDecimal profTaxFixed;
+    @NotBlank
+    @DecimalMin(value = "0.0")
+    private String policyDesc;
+>>>>>>> 314dc4c (Updated latest backend)
 
 }

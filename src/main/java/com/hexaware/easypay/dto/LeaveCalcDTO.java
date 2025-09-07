@@ -1,5 +1,6 @@
 package com.hexaware.easypay.dto;
 
+<<<<<<< HEAD
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
@@ -69,4 +70,18 @@ public class LeaveCalcDTO {
     }
 
     
+=======
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+public class LeaveCalcDTO {
+
+    private Long reqId;
+    private Integer totalDays;
+    private Integer paidLeaves;
+    private Integer unpaidLeaves;
+
+>>>>>>> 314dc4c (Updated latest backend)
 }

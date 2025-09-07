@@ -6,4 +6,8 @@ public class DefaultException extends RuntimeException{
         super(message);
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 314dc4c (Updated latest backend)
